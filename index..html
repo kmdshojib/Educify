@@ -72,12 +72,12 @@
           </div>
         <!-- Carousel end  -->
         <!-- course section start -->
-        <div class="discover-course mt-5">
+        <div class="discover-course mt-5 d-flex flex-column justify-content-center align-items-center">
           <div class="title d-flex flex-column align-items-center mt-5">
-            <h1 class="col-3 text-center">Discover Our Popular Courses</h1>
-            <p class="col-4 text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <h1 class="col-6 text-center">Discover Our Popular Courses</h1>
+            <p class="col-8 text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
           </div>
-          <div class="course container row justify-content-md-center gap-3">
+          <div class="course container row justify-content-center gap-3">
             <!-- Fundamental Of UI/UX Design start -->
             <div class="card mb-3 " style="max-width: 540px;">
               <div class="row no-gutters">
@@ -186,70 +186,74 @@
         </div>
         <!-- course section end -->
         <!-- ready to join section starts here -->
-        <div class="ready-join-container container rounded w-100 d-flex bg-primary mt-5 justify-content-around">
-          <div class="title w-75  d-flex flex-column justify-content-center">
-            <h1 class="text-light ">Ready to join?</h1>
-            <p class="text-light ">We need to accept that we won't always make the right decisions, that we'll screw up royally sometimes — understanding that failure is not the opposite of success, it's part of success</p>
-          </div>
-          <div class="d-flex align-items-center">
-            <button type="button" class="btn btn-primary bg-light text-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row g-3"> 
-                      <div class="col-md-6">
-                        <label for="firstname" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="firstname">
+        <div class="d-flex align-items-center justify-content-center" >
+          <div class="d-flex align-content-center ms-4">
+            <div class="ms-5 ready-join-container jumbotron container rounded w-100 d-flex bg-primary mt-5 justify-content-around">
+              <div class="title w-75  d-flex flex-column justify-content-center">
+                <h1 class="text-light ">Ready to join?</h1>
+                <p class="text-light ">We need to accept that we won't always make the right decisions, that we'll screw up royally sometimes — understanding that failure is not the opposite of success, it's part of success</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-primary bg-light text-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="col-md-6">
-                        <label for="lastname" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastname">
+                      <div class="modal-body">
+                        <form class="row g-3"> 
+                          <div class="col-md-6">
+                            <label for="firstname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstname">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastname">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Permanent Address">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Temporary Address">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <div class="col-12">
+                            
+                          </div>
+                        </form>
                       </div>
-                      <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Register</button>
                       </div>
-                      <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                      </div>
-                      <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Permanent Address">
-                      </div>
-                      <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Temporary Address">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                      </div>
-                      <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                      <div class="col-12">
-                        
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Register</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -257,6 +261,67 @@
           </div>
         </div>
         <!-- ready to join section ends here -->
+
+        <!-- FAQ section starts here -->
+        <div class="container mt-5">
+          <div class="faq-title">
+            <h1 class="faq-title-lg text-center">Frequently Asked Questions</h1>
+            <p class="faq-text-sm  col-9 text-center"> Frequently asked questions (FAQ) are questions and answers that often follow a certain topic – a collection of common questions that tend to be asked over and over again on topics such as timing, delivery and handling, product information, and return policy.</p>
+          </div>
+          <div class="faq">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is the difference between flexbox and grid?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong> This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility while working on either element (row or column). HTML markup and CSS will be easy to manage in this type of scenario.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the difference between bootstrap and tailwind?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit. Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness.</strong> Websites created using Tailwind CSS are much more customizable.	Websites created with Bootstraps are known for their responsiveness and flawless design, but the looks are generic and similar.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is css box model?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>In CSS, the term "box model" is used when talking about design and layout.</strong> IThe CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What is semantic tag in html?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> Elements such as <code>&lt;header&gt;</code> , <code>&lt;footer&gt;</code> and <code>&lt;article&gt;</code> are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ section ends here -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
