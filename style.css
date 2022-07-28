@@ -1,0 +1,20 @@
+/* .carousel-section start */
+.bg-shadow:after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+  .carousel-caption{
+    top: 60%;
+    transform: translateY(-50%);
+  }
+.img-size{
+    width: 130px;
+    height: 700px;
+    object-fit: cover;
+}
+  /* .carousel-section start */
