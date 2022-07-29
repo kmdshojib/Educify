@@ -32,6 +32,19 @@
 
   }
 
+@media screen and (max-width:670px){
+  .ready-join-container{
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+  }
+  .ready-title-lg{
+    font-size: 20px !important;
+  }
+  .ready-title-sm{
+    font-size: 12px !important;
+  }
+}
+
 .footer{
   height: 472px;
 }

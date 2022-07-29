@@ -11,22 +11,33 @@
     <main>
         <!-- nav section start -->
         <nav class="mt-3 mb-5 navbar navbar-expand-lg mx-5">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex">
               <a class="navbar-brand fw-bold me-5" href="#">Educify</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              
+              <div class="d-flex flex-row-reverse justify-content-end"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+               
+              </div>
+              
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-5">
-                  <a class="nav-link  ms-5 me-5" aria-current="page" href="#">Courses</a>
+                  <a class="nav-link  ms-lg-5 me-5" aria-current="page" href="#">Courses</a>
                   <a class="nav-link  me-5" href="#">Deals</a>
                   <a class="nav-link  me-5" href="#">Success</a>
                   <a class="nav-link  me-5">About</a>
                   <a class="nav-link  me-5">Register</a>
-                  <button type="button" class="btn btn-primary bg-light text-primary">Register</button>
-                </div>
+                  <div class="d-lg-none d-flex">
+                    <button type="button" class="btn btn-primary bg-light text-primary">Register</button>
+                  </div>
+                </div> 
+              </div>
+              <div class="d-none d-lg-flex">
+                <button type="button" class="btn btn-primary bg-light text-primary">Register</button>
               </div>
             </div>
+           
           </nav>
         <!-- nav section end -->
         <!-- Carousel start -->
@@ -130,7 +141,7 @@
               <!-- Fullstack Web Development section ends here  -->
 
               <!-- Digital Marketing section starts here  -->
-              <div class="card mb-3  d-sm-none d-md-none d-lg-flex" style="max-width: 540px;">
+              <div class="card mb-3  d-none d-lg-flex" style="max-width: 540px;">
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img src="./assets/course-4.png" class="card-img" alt="...">
@@ -147,7 +158,7 @@
               <!-- Digital Marketing section ends here  -->
 
               <!-- Photography Basic Rules starts here -->
-              <div class="card mb-3  d-sm-none d-md-none d-lg-flex" style="max-width: 540px;">
+              <div class="card mb-3  d-none d-lg-flex" style="max-width: 540px;">
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img src="./assets/course-5.png" class="card-img" alt="...">
@@ -163,7 +174,7 @@
               </div>
               <!-- Photography Basic Rules ends here -->
               <!-- Motion Graphics starts here -->
-              <div class="card mb-3  d-sm-none d-md-none d-lg-flex" style="max-width: 540px;">
+              <div class="card mb-3  d-none d-lg-flex" style="max-width: 540px;">
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img src="./assets/course-6.png" class="card-img" alt="...">
@@ -180,7 +191,7 @@
               <!-- Motion Graphics ends here -->
           </div>
           <div class="text-center">
-            <button type="button" class="btn btn-primary align-items-center  d-sm-none d-md-none d-lg-flex">See More Courses</button>
+            <button type="button" class="btn btn-primary align-items-center  d-none d-lg-flex">See More Courses</button>
             <button type="button" class="btn btn-primary align-items-center  d-sm-flex d-md-flex d-lg-none">View all</button>
           </div>
           
@@ -189,12 +200,12 @@
         <!-- ready to join section starts here -->
         <div class="d-flex align-items-center justify-content-center" >
           <div class="d-flex align-content-center ms-4">
-            <div class="ms-5 ready-join-container jumbotron container rounded w-100 d-flex bg-primary mt-5 justify-content-around">
-              <div class="title w-75  d-flex flex-column justify-content-center">
-                <h1 class="text-light ">Ready to join?</h1>
-                <p class="text-light ">We need to accept that we won't always make the right decisions, that we'll screw up royally sometimes — understanding that failure is not the opposite of success, it's part of success</p>
+            <div class="ms-5 ready-join-container jumbotron container rounded w-100 d-flex bg-primary mt-5 justify-content-around flex-column flex-lg-row">
+              <div class="title   dflex flex-column justify-content-center w-75 mt-lg-4">
+                <h1 class="text-light ready-title-lg">Ready to join?</h1>
+                <p class="text-light ready-title-sm">We need to accept that we won't always make the right decisions, that we'll screw up royally sometimes — understanding that failure is not the opposite of success, it's part of success</p>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center mb-sm-2">
                 <button type="button" class="btn btn-primary bg-light text-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -324,7 +335,7 @@
         </div>
         <!-- FAQ section ends here -->
         <!-- trusted company starts here -->
-          <div class=" d-sm-none d-md-none d-lg-flex flex-column justify-content-center align-items-center d-md-none d-sm-none d-lg-flex">
+          <div class="d-lg-flex flex-column justify-content-center align-items-center d-none">
             <h1>Trusted by over 800+ companies</h1>
             <div class="trusted d-flex justify-content-between mx-5 mt-3">
               <img  src="./assets/company-1.png" alt="">
