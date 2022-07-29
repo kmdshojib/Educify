@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 /* .carousel-section start */
 .bg-shadow:after {
     content:"";
@@ -27,3 +31,10 @@
     height: 200px;
 
   }
+
+.footer{
+  height: 472px;
+}
+.trusted{
+  width: 85%;
+}
